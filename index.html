@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+   
+    <nav>
+        <ol>
+            <a href="#me"><li>About Me</li></a>
+            <a href="#cert"><li>My certificates</li></a>
+            <a href="#pro"><li>My projects</li></a>
+            <a href="#footer"><li>Contacts</li></a>
+        </ol>
+    </nav>
+
+    <div class="banner">
+        <img src="./image/banner.jpg" alt="my photo">
+    </div>
+
+    <div class="main">
+      <div class="about" id="me">
+        <div class="itsme">
+          <img src="./image/CZJ-n67SwPk.jpg" alt="it`s me">
+          <p>Hello, my name is Rima. I am 27 years old.</p>
+        </div>
+        <div class="itsme">
+          <img src="./image/4ivfhuzT_20.jpg" alt="me and my husband">
+          <p>More than anything in the world i love my husband and traveling</p>
+        </div>
+        <div class="itsme">
+          <img src="./image/XQ_JrQHVUGw.jpg" alt="my house">
+          <p>The biggest achievement in my life is moving to my private house</p>
+        </div>
+        <div class="itsme">
+          <img src="./image/7PNgk8ytYww.jpg" alt="me">
+          <p>Now I am taking a course in codecademy for further development in the field of web development.</p>
+        </div>
+      </div>
+
+      <div class="serts" id="cert">
+        <div class="sert">
+          <img src="./image/Безымянный1.png" alt="">
+          <div class="button"><a href="https://www.codecademy.com/profiles/Rimmylka/certificates/9a5bb1fc45b4281af1fffec93b0aaf05">Click</a></div>
+        </div>
+        <div class="sert">
+          <img src="./image/Безымянный2.png" alt="">
+          <div class="button"><a href="https://www.codecademy.com/profiles/Rimmylka/certificates/705dcb15de0da4dd9d9fc4f3274b430e">Click</a></div>
+        </div>
+        <div class="sert">
+          <img src="./image/Безымянный3.png" alt="">
+          <div class="button"><a href="https://www.codecademy.com/profiles/Rimmylka/certificates/c87ba0541f8be78bc2f4ba1128233f6f">Click</a></div>
+        </div>
+        <div class="sert">
+          <img src="./image/Безымянный4.png" alt="">
+          <div class="button"><a href="https://www.codecademy.com/profiles/Rimmylka/certificates/36ae898a1d1c8524815305b2d1d2ebab">Click</a></div>
+        </div>
+      </div>
+
+        <div class="progects" id="pro">
+        
+            <div class="firstpro">
+                <div class="fname">
+                    <img src="https://content.codecademy.com/projects/chore-door/images/logo.svg">
+                  </div>
+              
+                  <div class="title-row">
+                    <img src="https://content.codecademy.com/projects/chore-door/images/star.svg">
+                    <p class="instructions-title">Instructions</p>
+                    <img src="https://content.codecademy.com/projects/chore-door/images/star.svg">
+                  </div>
+              
+                  <table class="instructions-row">
+                    <tr>
+                      <td class="instructions-number">1</td>
+                      <td class="instructions-text">Hiding behind one of these doors is the ChoreBot.</td>
+                    </tr>
+                    <tr>
+                      <td class="instructions-number">2</td>
+                      <td class="instructions-text">Your mission is to open all of the doors without running into the ChoreBot.</td>
+                    </tr>
+                    <tr>
+                      <td class="instructions-number">3</td>
+                      <td class="instructions-text">If you manage to avoid the ChoreBot until you open the very last door, you win!</td>
+                    </tr>
+                    <tr>
+                      <td class="instructions-number">4</td>
+                      <td class="instructions-text">See if you can score a winning streak!</td>
+                    </tr>
+                  </table>
+              
+                  <div class="door-row">
+                    <img id="door1" class="door-frame" src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg">
+                    <img id="door2" class="door-frame" src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg">
+                    <img id="door3" class="door-frame" src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg">
+                  </div>
+              
+                  <div id="start" class="start-row">Good luck!</div>
+              
+                  <script type="text/javascript" src="script.js"></script>
+            </div>
+
+            <div class="pianono">
+                <p class='title'>Piano Player</p>
+                <p id='demo'>Follow the song below to play  the piano.</p>
+                <section class="piano">
+                  <section id='c-key' class="key">
+                    <section class='keynote'>C</section>
+                  </section>
+                  <section id='c-sharp-key' class="black-key">
+                    <section class='black-keynote'>C#</section>
+                  </section>
+                  <section id='d-key' class="key">
+                    <section class='keynote'>D</section>
+                  </section>
+                  <section id='d-sharp-key' class="black-key">
+                    <section class='black-keynote'>D#</section>
+                  </section>
+                  <section id='e-key' class="key">
+                    <section class='keynote'>E</section>
+                  </section>
+                  <section id='f-key' class="key">
+                    <section class='keynote'>F</section>
+                  </section>
+                  <section id='f-sharp-key' class="black-key">
+                    <section class='black-keynote'>F#</section>
+                  </section>
+                  <section id='g-key' class="key">
+                    <section class='keynote'>G</section>
+                  </section>
+                  <section id='g-sharp-key' class="black-key">
+                    <section class='black-keynote'>G#</section>
+                  </section>
+                  <section id='a-key' class="key">
+                    <section class='keynote'>A</section>
+                  </section>
+                  <section id='a-sharp-key' class="black-key">
+                    <section class='black-keynote'>A#</section>
+                  </section>
+                  <section id='b-key' class="key">
+                    <section class='keynote'>B</section>
+                  </section>
+                  <section id='high-c-key' class="key">
+                    <div class='keynote'>C</div>
+                  </section>
+                </section>
+              
+                <section id='lyrics'>
+                  <section id='column-one'>
+                    <section id="word-one">HAP-</section>
+                    <section id="letter-note-one">G</section>
+                  </section>
+                  <section id='column-two'>
+                    <section id="word-two">PY</section>
+                    <section id="letter-note-two">G</section>
+                  </section>
+                  <section id='column-three'>
+                    <section id="word-three">BIRTH-</section>
+                    <section id="letter-note-three">A</section>
+                  </section>
+                  <section id='column-four'>
+                    <section id="word-four">DAY</section>
+                    <section id="letter-note-four">G</section>
+                  </section>
+                  <section id='column-five'>
+                    <section id="word-five">TO</section>
+                    <section id="letter-note-five">C</section>
+                  </section>
+                  <section id='column-six'>
+                    <section id="word-six">YOU</section>
+                    <section id="letter-note-six">B</section>
+                  </section>
+                  <section id='column-optional' class='column-optional'>
+                    <section id="word-optional">END</section>
+                    <section id="letter-note-optional">A</section>
+                  </section>
+              
+                  <button id="first-next-line">Line 2</button>
+                  <button id="second-next-line">Line 3</button>
+                  <button id="third-next-line">Line 4</button>
+                  <button id="fourth-next-line">Reset</button>
+                </section>
+              
+                <script  src="main.js"></script>
+            </div>
+        </div>
+
+    </div>
+    <footer id ="footer">
+      <div class="follow">
+
+        <a href="https://instagram.com/rimmyla_silina"><img src="./image/inst2.png" alt=""></a>
+        <a href="#"><img src="./image/in.png" alt=""></a>
+        <a href="https://t.me/niktorin"><img src="./image/tg.png" alt=""></a>
+      </div>
+
+      <div class="forma">
+       <h3> Write me</h3>
+       <form action="" class="sendmessage">
+        <div class="form-row">
+        <label for="name">Name</label><input type="text" id="name" required>
+        </div>
+        <div class="form-row">
+        <label for="email">Email</label><input type="email" id="email" required>
+        </div>
+        <div class="form-row">
+        <label for="message">Message</label><textarea rows="5" id="message" required></textarea>
+        </div>
+        <div class="form-row">
+        <input type="submit" value="Send a message">
+        </div>
+        </form>
+      </div>
+
+      
+    </footer>
+</body>
+</html>
