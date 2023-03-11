@@ -9,16 +9,18 @@ body {
     font-family: 'Playfair Display', serif;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    
+    background-size: cover;  
 }
+
 a {
   text-decoration: none;
   color: black;
-
+  display: flex;
+    justify-content: space-around;
 }
+
 ol {
-   margin-top: 80px;
+   margin-top: 8px;
     width: 40%;
     z-index: 1;
     position: fixed;
@@ -32,18 +34,57 @@ li {
     font-size: 2.75rem;
     flex-shrink: 2;
 }
+li:hover {
+  cursor: pointer;
+}
+li:active {
+  color: rgb(5, 126, 116);
+  
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  ol{
+    width: 100%;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2px;
+    z-index: 2;
+  }
+  li {
+    font-size: 1rem;
+    height: 1.9rem;
+   background-color: #86f1cd3a;
+   border-radius: 10px;
+   border: 3px solid rgba(36, 122, 110, 0.185);
+  }
+  li:hover {
+    cursor: pointer;
+  }
+  li:active {
+    margin-top: 5px;
+    color: rgb(5, 126, 116);
+    box-shadow: 0px 0px 5px 5px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1090px){
+  li{
+    height: 100px;
+    font-size: 2rem;
+  }
+}
 
 .banner {
-    width: 100%;
-    height: 800px;
-    overflow: hidden;
-   
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  opacity: 0.9;
 }
 
 .banner img {
-  width: 100%;
-  height: 1000px; 
-   opacity: 0.9;
+max-width: 100%;
+height: auto;
+ display: block;
 }
 
 .main {
@@ -55,7 +96,21 @@ li {
 }
 
 .about, .progects, .serts{
-    width: 60%; 
+  width: 60%; 
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .main {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.about, .progects, .serts{
+  width: 100%; 
+}
 }
 
 /*ABOUT*/
@@ -71,7 +126,7 @@ li {
 
 .itsme {
   width: 40%;
-  height: 390px;
+  height: auto;
   overflow: hidden;
   border-radius: 2%;
   margin: 30px 10px 10px 10px;
@@ -89,6 +144,16 @@ li {
   font-size: 18px;
   text-align: center;
 }
+@media (min-width: 300px) and (max-width: 600px){
+  .itsme {
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 2%;
+    margin: 30px 10px 10px 10px;
+    background-color: #017474a8;
+  }
+}
 
 /*CERTIFICATES*/
 
@@ -105,9 +170,8 @@ li {
 .sert {
   display: flex;
   flex-direction: column;
-  
   width: 40%;
-  height: 420px;
+  height: auto;
   overflow: hidden;
   border-radius: 2%;
   margin: 30px 10px 10px 10px;
@@ -139,7 +203,15 @@ li {
   color: rgb(44, 44, 44);
   box-shadow: 0px 0px 0px 0px;
 }
-
+@media (min-width: 300px) and (max-width: 600px) {
+  .sert {
+    width: 90%;
+    height: auto;
+}
+.sert .button {
+  width: 70%;
+}
+}
 /* DOOR*/
 
 .progects {
@@ -214,6 +286,12 @@ li {
     padding: 5px;
     border-radius: 5px;
     
+  }
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    .instructions-row {
+      width: 100%;
+    }
   }
 
   /*PIANONO*/
@@ -335,8 +413,30 @@ li {
     letter-spacing: 1px;
     cursor: pointer;
   }
+  @media (min-width: 300px) and (max-width: 600px) {
+    #lyrics{
+      width: 300px;
+      height: 350px;
+    }
+    #first-next-line, #second-next-line, #third-next-line, #fourth-next-line {
+      position: relative;
+      left: 90px;
+    }
+    #third-next-line {
+      left: 8px;
+      bottom: 42px;
+      margin: 0;
+    }
+  }
 
   /*FOOTER*/
+  @media (min-width: 300px) and (max-width: 600px){
+    footer {
+      flex-direction: column-reverse;
+      align-items: center
+    }
+  }
+  
 
   footer {
     margin-top: 10px;
@@ -345,26 +445,25 @@ li {
     justify-content: center;
   }
 
-  /*FOLLOW*/
+ /*FOLLOW*/
 
-  .follow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    margin-top: 15rem;
+.follow {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 70%;
+  margin-bottom: 1rem;
   }
- 
-.follow img {
-  width: 40%;
-}
-
+  
+  .follow img {
+  width: 35%;
+  }
   /*FORMA*/
-
+  
    .forma{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
   }
 
   .forma h3 {
@@ -382,8 +481,9 @@ li {
     background: #61777560;
     border-radius: 3%;
     color: #000000;  
-    width: 50%;
+    width: 70%;
  }
+
  .form-row {
 
     margin-bottom: 7px;
